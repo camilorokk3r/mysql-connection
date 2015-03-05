@@ -1,0 +1,32 @@
+{
+  "name": "mysql-connection",
+  "version": "1.0.0",
+  "description": "Creates a connection using ssh tunnel",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camilorokk3r/mysql-connection"
+  },
+  "keywords": [
+    "mysql",
+    "ssh"
+  ],
+  "author": "Camilo Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camilorokk3r/mysql-connection/issues"
+  },
+  "homepage": "https://github.com/camilorokk3r/mysql-connection",
+  "dependencies": {
+    "mysql": "^2.5.5",
+    "q": "^1.2.0",
+    "tunnel-ssh": "0.0.5"
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "mocha": "^2.1.0"
+  }
+}
