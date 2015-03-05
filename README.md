@@ -8,7 +8,7 @@ A small class to provide mysql database connectivity using ssh tunnels
   npm install git://github.com/camilorokk3r/mysql-connection --save
 
 ## Usage
-```
+```node
   var config = {};
   config['database'] =   {
     host: '127.0.0.1',
