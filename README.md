@@ -1,6 +1,3 @@
-# mysql-connection
-
-
 mysql-connection
 =========
 
@@ -11,7 +8,7 @@ A small class to provide mysql database connectivity using ssh tunnels
   npm install git://github.com/camilorokk3r/mysql-connection --save
 
 ## Usage
-
+```
   var config = {};
   config['database'] =   {
     host: '127.0.0.1',
@@ -22,6 +19,7 @@ A small class to provide mysql database connectivity using ssh tunnels
     insecureAuth: true, 
     //debug:true
   };
+
   config['tunnel'] =   {
     remoteHost: '127.0.0.1', // mysql server host
     remotePort: 3306, // mysql server port
@@ -63,3 +61,4 @@ A small class to provide mysql database connectivity using ssh tunnels
     
     console.log("Error:", err);
   });
+```
