@@ -107,7 +107,7 @@ module.exports = {
             if (err){
               defer.reject(err);
             }else{
-              this.connection = connection;
+              me.connection = connection;
 
               defer.resolve(connection);
             }
