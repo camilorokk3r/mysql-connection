@@ -31,7 +31,9 @@ var mysqlConnection = new MySQLConnection(config['database'], config['tunnel']);
 mysqlConnection.init().then(function(connection){
   
   console.log("Established a MySQL connection:", connection.threadId);
-  
+
+
+
   connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
     if (err) throw err;
 

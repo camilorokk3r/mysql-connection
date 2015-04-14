@@ -71,15 +71,19 @@ module.exports = {
         //
         if (err.code === 'PROTOCOL_CONNECTION_LOST') {
             console.log('MySQL connection lost. Reconnecting.');
-            me.connection = me.connect();
+            setTimeout(function () {
+                me.connect();
+            }, 3000);
         } else if (err.code === 'ECONNREFUSED') {
             //
             // If connection refused then keep trying to reconnect every 3 seconds
             //
-            console.log('MySQL connection refused. Trying soon again. ' + err);
+            console.log('MySQL connection refused. Trying soon again. ' ,  err);
             setTimeout(function () {
                 me.connect();
             }, 3000);
+        }else{
+          throw err;
         }
     };
 
